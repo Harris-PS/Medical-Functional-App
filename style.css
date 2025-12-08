@@ -9,8 +9,6 @@ button {
 
 .header {
   width: 100%;
-  display: flex;
-  background-color: #ca370a;
 }
 
 
@@ -22,16 +20,17 @@ button {
 
 .nav-left {
   display: flex;
+  flex-grow: 1;
   align-items: center;
-  padding: 25px 0px; 
+  padding: 20px 20px 20px 200px; 
 }
 
 .appname {
   display: flex;
   font-weight: bold;
   font-size: 24px;
-  margin: auto 120px auto 200px;
-  padding: auto;
+  text-align: center;
+  padding-right: 90px;
 }
 
 nav {
@@ -47,9 +46,25 @@ nav {
   gap: 21px;
 }
 
-.navlinkB {
+.navlinkA li a {
+  display: flex;
+  text-decoration: none;
+  color: #737373;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.nav-right {
+  background-color: #B2E3FF; 
   display: flex;
   align-items: center;
+  padding-right: 350px;
+  padding-left: 100px;
+}
+
+.navlinkB {
+  display: flex;
   padding: 0px;
   gap: 21px;
 }
@@ -74,3 +89,73 @@ nav {
   font-weight: bold;
   font-size: 13px;
 }
+
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container-left {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 150px;
+}
+
+.h4-1 {
+  color: #23A6F0;
+}
+
+.h1-1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.p-1 {
+  font-size: 16px;
+  color: #737373;
+}
+
+.btn-1 {
+  background: #23A6F0;
+  color: white;
+  border-radius: 3px;
+  border: 8px solid #23A6F0;
+  padding: 3px 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.btn-2 {
+  background: none;
+  color: #23A6F0;
+  border: 1px solid #23A6F0;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.container-right {
+  width: 50%;
+}
+
+.container-left-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-container-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 70px;
+  margin: auto;
+}
+
