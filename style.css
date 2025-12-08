@@ -1,14 +1,18 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #F7FAFF;
+  overflow-x: hidden;
 }
 
 button {
   font-family: inherit;
+  cursor: pointer;
 }
 
 .header {
   width: 100%;
+  background-color: #F7FAFF;
 }
 
 
@@ -16,56 +20,49 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  align-items: center;
 }
 
 .nav-left {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   align-items: center;
-  padding: 20px 20px 20px 200px; 
+  padding: 15px 0;
 }
 
 .appname {
-  display: flex;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-  padding-right: 90px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
+text-decoration: none;
+  font-weight: 900;
+  font-size: 24px; 
+  color: #252B42;
+  padding-right: 40px; 
+  padding-left: 100px;
 }
 
 .navlinkA {
   list-style: none;
   display: flex;
-  align-items: center;
   padding: 0px;
   gap: 21px;
 }
 
 .navlinkA li a {
-  display: flex;
   text-decoration: none;
   color: #737373;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
 }
 
 .nav-right {
-  background-color: #B2E3FF; 
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  padding-right: 350px;
-  padding-left: 250px;
+  padding: 15px 100px 15px 40px;
 }
 
 .navlinkB {
   display: flex;
-  padding: 0px;
   gap: 21px;
 }
 
@@ -74,9 +71,8 @@ nav {
   color: #23A6F0;
   border: none;
   padding: 10px 20px;
-  cursor: pointer;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .join-btn {
@@ -87,7 +83,7 @@ nav {
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .header-container {
@@ -95,35 +91,46 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px 0;
 }
 
 .header-container-left {
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 150px;
+  display:flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 50px 0px 100px 100px;
 }
 
 .h4-1 {
   color: #23A6F0;
+  font-weight: 600;
 }
 
 .h1-1 {
   font-weight: bold;
   font-size: 50px;
+  margin: 0;
 }
 
 .p-1 {
   font-size: 16px;
   color: #737373;
+  margin: 25px 0;
+}
+
+.container-left-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .btn-1 {
   background: #23A6F0;
   color: white;
-  border-radius: 3px;
-  border: 8px solid #23A6F0;
-  padding: 3px 5px;
+  border-radius: 5px;
+  border: 2px solid #23A6F0;
+  padding: 15px 25px;
   cursor: pointer;
   font-weight: bold;
   font-size: 13px;
@@ -133,29 +140,126 @@ nav {
   background: none;
   color: #23A6F0;
   border: 1px solid #23A6F0;
-  border-radius: 3px;
-  padding: 10px 20px;
+  border-radius: 4px;
+  padding: 15px 25px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 13px;
-}
-
-.container-right {
-  width: 50%;
-}
-
-.container-left-btn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  font-size: 14px;
 }
 
 .header-container-right{
-  display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  padding: 70px;
-  margin: auto;
+  flex-basis: 50%;
+  padding: 0 100px 0 350px;
 }
 
+.doc-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .appname {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .nav-right {
+    padding: 15px 50px 15px 20px; 
+  }
+  .header-container-left {
+    padding: 0 30px 0 50px; 
+  }
+  .header-container-right {
+    padding: 0 50px 0 30px; 
+  }
+  .h1-1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 992px) {
+  
+  .navbar {
+    flex-direction: column; 
+  }
+
+  .nav-left {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  
+  .appname {
+    padding-left: 0;
+    margin-right: 20px;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+
+  .header-container {
+    flex-direction: column; 
+    padding: 50px 0 50px 0;
+  }
+
+  .header-container-left {
+ 
+    align-items: center; 
+    text-align: center;
+    padding: 20px; 
+  }
+
+  .p-1 br {
+    display: none;
+  }
+
+  .header-container-right {
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .doc-image {
+    max-width: 80%; 
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .nav-left {
+    flex-direction: column;
+  }
+
+  .appname {
+    margin-bottom: 10px;
+  }
+
+  .navlinkA {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  
+  .h1-1 {
+    font-size: 38px;
+  }
+
+ 
+  .container-left-btn {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .btn-1, .btn-2 {
+    width: 90%; 
+  }
+}
