@@ -1,3 +1,8 @@
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -10,11 +15,11 @@ button {
   cursor: pointer;
 }
 
+/* Header Container*/
 .header {
   width: 100%;
   max-width: 100%;
 }
-
 
 .navbar {
   width: 100%;
@@ -46,7 +51,8 @@ button {
 .navlinkA {
   list-style: none;
   display: flex;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
   gap: 21px;
 }
 
@@ -55,7 +61,35 @@ button {
   color: #737373;
   font-weight: 500;
   font-size: 16px;
+  position: relative; 
+  display: inline-block;
 }
+
+
+.navlinkA li a::after,
+.navlinkA li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.navlinkA li a::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.navlinkA li a:hover::after,
+.navlinkA li a:hover::before {
+  transform: scaleX(1);
+}
+
 
 .nav-right {
   display: flex;
@@ -97,31 +131,34 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 50px 5%;
-  gap:40px;
+  gap: 40px;
 }
 
 .header-container-left {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  flex-basis: 50%;
-  padding: 50px 0px 100px 100px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .h4-1 {
   color: #23A6F0;
   font-weight: 600;
+  margin: 0 0 20px 0;
 }
 
 .h1-1 {
   font-weight: bold;
   font-size: 50px;
   margin: 0;
+  line-height: 1.2;
 }
 
 .p-1 {
   font-size: 16px;
   color: #737373;
   margin: 25px 0;
+  line-height: 1.6;
 }
 
 .container-left-btn {
@@ -153,135 +190,25 @@ button {
   font-size: 14px;
 }
 
-.header-container-right{
+.header-container-right {
   flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 50%;
-  padding: 0 100px 0 350px;
+  max-width: 600px;
 }
 
 .doc-image {
   max-width: 100%;
   height: auto;
-  margin-top: 50px;
+  display: block;
 }
 
-
-@media (max-width: 1200px) {
-  .appname {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .nav-right {
-    padding: 15px 50px 15px 20px; 
-  }
-  .header-container-left {
-    padding: 0 30px 0 50px; 
-  }
-  .header-container-right {
-    padding: 0 50px 0 30px; 
-  }
-  .h1-1 {
-    font-size: 48px;
-  }
-}
-
-@media (max-width: 992px) {
-  
-  .navbar {
-    flex-direction: column; 
-  }
-
-  .nav-left {
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 20px;
-  }
-  
-  .appname {
-    padding-left: 0;
-    margin-right: 20px;
-  }
-
-  .nav-right {
-    width: 100%;
-    justify-content: center;
-    padding: 15px 0;
-  }
-  
-
-  .header-container {
-    flex-direction: column; 
-    padding: 50px 0 50px 0;
-  }
-
-  .header-container-left {
- 
-    align-items: center; 
-    text-align: center;
-    padding: 20px; 
-  }
-
-  .p-1 br {
-    display: none;
-  }
-
-  .header-container-right {
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  .doc-image {
-    max-width: 80%; 
-    margin-top: 0;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  
- .nav-left {
-    flex-direction: column;
-  }
-
-  .appname {
-    margin-bottom: 10px;
-    margin-left: 70px;
-  }
-
-  .navlinkA {
-    flex-wrap: wrap; 
-    justify-content: center;
-  }
-  
-  .h1-1 {
-    font-size: 38px;
-  }
-
- 
-  .container-left-btn {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-  
-  .btn-1, .btn-2 {
-    width: 90%; 
-  }
-
-  .header-container-right {
-    margin-right: 40px;
-    padding: 20px;
-    justify-content: center;
-  }
-}
-
-
+/* Activity container */
 .activity {
   width: 100%;
-  padding: 80px 0;
+  max-width: 100%;
+  padding: 80px 5%;
 }
 
 .activity-container {
@@ -289,20 +216,23 @@ button {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .activity-container-top {
   width: 100%;
-  display:flex;
+  max-width: 1200px;
+  display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  padding-left: 170px;
+  text-align: left;
 }
 
 .p-2 {
   font-size: 14px;
   color: #737373;
   margin-top: 10px;
+  line-height: 1.6;
 }
 
 .h1-2 {
@@ -314,29 +244,183 @@ button {
 .activity-container-bottom {
   display: flex;
   width: 100%;
+  max-width: 1200px;
   flex-direction: row;
   gap: 30px;
-  padding: 70px 200px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .activity-container-box {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: flex;
-  padding: 20px 150px 20px 50px;
+  padding: 35px 40px;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex-shrink: 1;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.h4-2 {
+  margin: 20px 0 15px 0;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .phone-image {
-  max-width: 100%;
+  max-width: 72px;
   height: auto;
 }
 
 .line-image {
-  max-width: 100%;
+  width: 50px;
   height: auto;
+  margin: 10px 0;
 }
 
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 3%;
+  }
+  
+  .header-container {
+    padding: 50px 3%;
+  }
+
+  .h1-1 {
+    font-size: 45px;
+  }
+
+  .activity {
+    padding: 60px 3%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 3%;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .header-container-left {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .header-container-right {
+    max-width: 500px;
+  }
+
+  .p-1 br {
+    display: none;
+  }
+
+  .activity-container-top {
+    text-align: center;
+    align-items: center;
+  }
+
+  .p-2 br {
+    display: none;
+  }
+
+  .activity-container-bottom {
+    gap: 20px;
+  }
+
+  .activity-container-box {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-left {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navlinkA {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .h1-1 {
+    font-size: 38px;
+  }
+
+  .container-left-btn {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-1, .btn-2 {
+    width: 100%;
+  }
+
+  .header-container {
+    padding: 30px 5%;
+  }
+
+  .activity {
+    padding: 40px 5%;
+  }
+
+  .h1-2 {
+    font-size: 28px;
+  }
+
+  .activity-container-bottom {
+    gap: 20px;
+  }
+
+  .activity-container-box {
+    flex: 1 1 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .appname {
+    font-size: 20px;
+  }
+
+  .h1-1 {
+    font-size: 32px;
+  }
+
+  .navlinkA {
+    gap: 10px;
+  }
+
+  .navlinkA li a {
+    font-size: 14px;
+  }
+}
