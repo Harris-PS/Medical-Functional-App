@@ -12,6 +12,7 @@ button {
 
 .header {
   width: 100%;
+  max-width: 100%;
 }
 
 
@@ -19,7 +20,7 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 15px 5%;
   align-items: center;
 }
 
@@ -27,7 +28,7 @@ button {
   display: flex;
   flex: 1;
   align-items: center;
-  padding: 15px 70px;
+  gap: 40px;
 }
 
 .appname {
@@ -35,8 +36,11 @@ button {
   font-weight: 900;
   font-size: 24px; 
   color: #252B42;
-  padding-right: 40px; 
-  padding-left: 100px;
+  white-space: nowrap;
+}
+
+.appname h2 {
+  margin: 0;
 }
 
 .navlinkA {
@@ -57,7 +61,6 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 300px;
 }
 
 .navlinkB {
@@ -83,14 +86,18 @@ button {
   cursor: pointer;
   font-weight: bold;
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .header-container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 50px 0;
+  justify-content: space-between;
+  padding: 50px 5%;
+  gap:40px;
 }
 
 .header-container-left {
@@ -159,6 +166,7 @@ button {
   height: auto;
   margin-top: 50px;
 }
+
 
 @media (max-width: 1200px) {
   .appname {
@@ -332,31 +340,3 @@ button {
   height: auto;
 }
 
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 992px) {
-  .activity-container-top {
-    max-width: 90%;
-    text-align: center;
-    align-items: center;
-}
-  
-  .activity-container-bottom {
-    flex-wrap: wrap; 
-    padding: 40px 20px;
-  }
-  
-  .activity-container-box {
-    width: 90%;
-    max-width: 450px;
-    margin-bottom: 20px; 
-  }
-}
-
-@media (max-width: 576px) {
-    .activity-container-box {
-    width: 95%;
-  }
-}
