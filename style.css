@@ -12,7 +12,6 @@ button {
 
 .header {
   width: 100%;
-  background-color: #F7FAFF;
 }
 
 
@@ -28,11 +27,11 @@ button {
   display: flex;
   flex: 1;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px 70px;
 }
 
 .appname {
-text-decoration: none;
+  text-decoration: none;
   font-weight: 900;
   font-size: 24px; 
   color: #252B42;
@@ -58,7 +57,7 @@ text-decoration: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 15px 100px 15px 40px;
+  padding-right: 300px;
 }
 
 .navlinkB {
@@ -268,5 +267,96 @@ text-decoration: none;
     margin-right: 40px;
     padding: 20px;
     justify-content: center;
+  }
+}
+
+
+.activity {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.activity-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.activity-container-top {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-left: 170px;
+}
+
+.p-2 {
+  font-size: 14px;
+  color: #737373;
+  margin-top: 10px;
+}
+
+.h1-2 {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+}
+
+.activity-container-bottom {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 30px;
+  padding: 70px 200px;
+}
+
+.activity-container-box {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  padding: 20px 150px 20px 50px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 1;
+}
+
+.phone-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.line-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .activity-container-top {
+    max-width: 90%;
+    text-align: center;
+    align-items: center;
+}
+  
+  .activity-container-bottom {
+    flex-wrap: wrap; 
+    padding: 40px 20px;
+  }
+  
+  .activity-container-box {
+    width: 90%;
+    max-width: 450px;
+    margin-bottom: 20px; 
+  }
+}
+
+@media (max-width: 576px) {
+    .activity-container-box {
+    width: 95%;
   }
 }
