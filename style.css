@@ -121,14 +121,10 @@ button {
 }
 
 .header-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
+  width: 100%;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px 5%;
-  gap: 40px;
 }
 
 .header-container-left {
@@ -202,7 +198,7 @@ button {
 .activity {
   width: 100%;
   max-width: 100%;
-  padding: 80px 5%;
+  padding: 150px 5%;
 }
 
 .activity-container {
@@ -242,6 +238,7 @@ button {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
+  padding-right: 250px;
 }
 
 .activity-container-box {
@@ -275,7 +272,7 @@ button {
 .content {
   width: 100%;
   max-width: 100%;
-  padding: 80px 5%;
+  padding: 150px 5%;
   background-color: #FFDCD1;
 }
 
@@ -294,6 +291,10 @@ button {
   gap: 20px;
 }
 
+.content-container-left .h4-1{
+  text-decoration: none;
+}
+
 .content-container-right {
   flex: 1;
   display: flex;
@@ -310,6 +311,94 @@ button {
 .content-container-left .line-image{
   width: 80px;
   height: 6px;
+}
+
+.specialities {
+  width: 100%;
+  max-width: 100%;
+  padding: 150px 5%;
+}
+
+.specialities-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialities-container-top {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.specialities-container-bottom {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 10px;
+
+}
+
+.specialities-sales{
+  display: flex;
+  gap: 10px;
+  color: #737373;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.specialities-price{
+  display: flex;
+  gap: 6px;
+}
+
+.specialities-price1{
+  color: #BDBDBD;
+}
+
+.specialities-price2{
+  color: #40BB15;
+}
+
+.specialities-details{
+  display: flex;
+  gap: 14px;
+  color: #737373;
+  font-weight: 600;
+  font-size: 10px;
+
+}
+
+.specialities-details span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.specialities-details img {
+  width: 18px;
+  height: 18px;
+}
+
+.specialities-btn{
+  color: #23A6F0;
+  border: 1px solid #23A6F0;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.specialities-box{
+  flex-direction: column;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
 }
 
 @media (max-width: 1200px) {
@@ -485,3 +574,4 @@ button {
     font-size: 14px;
   }
 }
+
