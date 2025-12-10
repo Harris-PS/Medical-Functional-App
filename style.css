@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #F7FAFF;
-  overflow-x: hidden;
 }
 
 button {
@@ -15,7 +14,6 @@ button {
   cursor: pointer;
 }
 
-/* Header Container*/
 .header {
   width: 100%;
   max-width: 100%;
@@ -64,7 +62,6 @@ button {
   position: relative; 
   display: inline-block;
 }
-
 
 .navlinkA li a::after,
 .navlinkA li a::before {
@@ -151,14 +148,12 @@ button {
   font-weight: bold;
   font-size: 50px;
   margin: 0;
-  line-height: 1.2;
 }
 
 .p-1 {
   font-size: 16px;
   color: #737373;
   margin: 25px 0;
-  line-height: 1.6;
 }
 
 .container-left-btn {
@@ -204,7 +199,6 @@ button {
   display: block;
 }
 
-/* Activity container */
 .activity {
   width: 100%;
   max-width: 100%;
@@ -232,13 +226,12 @@ button {
   font-size: 14px;
   color: #737373;
   margin-top: 10px;
-  line-height: 1.6;
 }
 
 .h1-2 {
   font-weight: bold;
   font-size: 35px;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .activity-container-bottom {
@@ -279,6 +272,46 @@ button {
   margin: 10px 0;
 }
 
+.content {
+  width: 100%;
+  max-width: 100%;
+  padding: 80px 5%;
+  background-color: #FFDCD1;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 600px;
+  gap: 20px;
+}
+
+.content-container-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-container-left .line-image{
+  width: 80px;
+  height: 6px;
+}
+
 @media (max-width: 1200px) {
   .navbar {
     padding: 15px 3%;
@@ -294,6 +327,10 @@ button {
 
   .activity {
     padding: 60px 3%;
+  }
+
+  .content{
+    padding: 40px 3%;
   }
 }
 
@@ -328,7 +365,7 @@ button {
   }
 
   .header-container-right {
-    max-width: 500px;
+    max-width: 400px;
   }
 
   .p-1 br {
@@ -349,8 +386,21 @@ button {
   }
 
   .activity-container-box {
-    flex: 1 1 calc(50% - 20px);
     min-width: 250px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-container-left {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .content-container-right {
+    max-width: 400px
   }
 }
 
@@ -388,6 +438,10 @@ button {
     padding: 30px 5%;
   }
 
+  .header-container-right {
+    max-width: 200px;
+  }
+
   .activity {
     padding: 40px 5%;
   }
@@ -401,9 +455,16 @@ button {
   }
 
   .activity-container-box {
-    flex: 1 1 100%;
     min-width: 100%;
     max-width: 100%;
+  }
+
+  .content-container{
+    padding: 20px 5%;
+  }
+
+  .content-container-right{
+    max-width: 250px;
   }
 }
 
