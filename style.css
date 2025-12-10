@@ -125,6 +125,7 @@ button {
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding-top: 5%;
 }
 
 .header-container-left {
@@ -234,11 +235,9 @@ button {
   display: flex;
   width: 100%;
   max-width: 1200px;
-  flex-direction: row;
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-  padding-right: 250px;
 }
 
 .activity-container-box {
@@ -337,10 +336,12 @@ button {
 }
 
 .specialities-container-bottom {
+  display: flex;
   width: 100%;
   max-width: 1200px;
-  display: flex;
-  gap: 10px;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
 
@@ -385,20 +386,28 @@ button {
   height: 18px;
 }
 
-.specialities-btn{
+.specialities-btn {
   color: #23A6F0;
   border: 1px solid #23A6F0;
   padding: 10px 20px;
   background-color: white;
   border-radius: 20px;
   font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
 }
 
 .specialities-box{
+  display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 280px;
   max-width: 350px;
+  gap: 15px;
+}
+
+.specialities-box .h4-1{
+  font-size: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -419,8 +428,13 @@ button {
   }
 
   .content{
-    padding: 40px 3%;
+    padding: 60px 3%;
   }
+
+  .specialities{
+    padding: 60px 3%;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -446,6 +460,7 @@ button {
     flex-direction: column;
     padding: 30px 5%;
     text-align: center;
+    gap: 30px;
   }
 
   .header-container-left {
@@ -491,6 +506,26 @@ button {
   .content-container-right {
     max-width: 400px
   }
+
+  .specialities-container-top {
+    text-align: center;
+  }
+
+  .specialities-container-bottom {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .specialities-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+
 }
 
 @media (max-width: 576px) {
@@ -554,6 +589,15 @@ button {
 
   .content-container-right{
     max-width: 250px;
+  }
+
+  .specialities-container-bottom {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
   }
 }
 
