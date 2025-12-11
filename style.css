@@ -132,7 +132,6 @@ button {
 .header-container-left {
   display: flex;
   flex-direction: column;
-  flex: 1;
   max-width: 600px;
 }
 
@@ -239,7 +238,7 @@ button {
   width: 100%;
   max-width: 1200px;
   gap: 30px;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
@@ -345,8 +344,7 @@ button {
   width: 100%;
   max-width: 1200px;
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: start;
 
 }
 
@@ -433,7 +431,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 200px;
+
 }
 
 .pricing-container-top {
@@ -460,6 +458,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   gap: 10px;
   padding: 50px;
+  flex: 1;
 }
 
 .pricing-box h2{
@@ -635,7 +634,7 @@ button {
   }
 
   .specialities-box{
-    min-width: 50px;
+    min-width: 50%;
     max-width: 50%;
   }
 
@@ -716,6 +715,9 @@ button {
 
   .activity-container-bottom {
     gap: 20px;
+
+    justify-content: center;
+    align-items: center;
   }
 
   .activity-container-box {
