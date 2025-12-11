@@ -555,6 +555,7 @@ button {
   flex-direction: column;
   gap: 20px;
   text-align: center;
+  flex: 1;
 }
 
 .review-box-identity img{
@@ -613,6 +614,10 @@ button {
   }
 
   .pricing{
+    padding: 60px 3%;
+  }
+
+  .reviews{
     padding: 60px 3%;
   }
 
@@ -703,6 +708,7 @@ button {
   .specialities-box{
     min-width: 50%;
     max-width: 50%;
+    padding-bottom: 20px;
   }
 
   .pricing-container{
@@ -733,6 +739,29 @@ button {
     margin: 0 auto;
   }
 
+  .reviews-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reviews-container-top{
+    text-align: center;
+  }
+
+  .reviews-container-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-box{
+    min-width: 40%;
+    max-width: 40%;
+    padding-bottom: 70px;
+
+  }
 
 }
 
@@ -821,6 +850,14 @@ button {
     max-width: 100%;
   }
 
+  .reviews-container-bottom{
+    gap: 20px;
+  }
+
+  .review-box{
+    min-width: 40%;
+    max-width: 40%;
+  }
 
 }
 
@@ -841,7 +878,17 @@ button {
     font-size: 14px;
   }
 
+  .activity-container-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+
   .pricing-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .review-box{
     min-width: 100%;
     max-width: 100%;
   }
