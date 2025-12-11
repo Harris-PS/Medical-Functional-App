@@ -225,6 +225,7 @@ button {
   font-size: 14px;
   color: #737373;
   margin-top: 10px;
+  line-height: 1.5;
 }
 
 .h1-2 {
@@ -588,6 +589,60 @@ button {
   margin: 0;
 }
 
+.newsletter{
+  width: 100%;
+  max-width: 100%;
+  padding: 150px 5%;
+}
+
+.newsletter-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.newsletter-container .h4-1 {
+  margin: 0;
+}
+
+.newsletter-container .h1-2{
+  margin: 0;
+}
+
+.newsletter-container .p-2{
+  font-size: 14px;
+  margin: 0;
+}
+
+.newsletter-container form{
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+}
+
+.newsletter-input{
+  flex: 1;
+  padding: 18px 25px;
+  border: 1px solid #d6d6d6;
+  border-right: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+}
+
+.newsletter-btn{
+  padding: 20px 40px;
+  background-color: #33A9FF;
+  color: white;
+  border: none;
+  font-size: 16px;
+
+}
+
 @media (max-width: 1200px) {
   .navbar {
     padding: 15px 3%;
@@ -618,6 +673,10 @@ button {
   }
 
   .reviews{
+    padding: 60px 3%;
+  }
+
+  .newsletter{
     padding: 60px 3%;
   }
 
@@ -763,6 +822,12 @@ button {
 
   }
 
+  .newsletter-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -859,6 +924,14 @@ button {
     max-width: 40%;
   }
 
+  .newsletter-container{
+    padding: 20px 5%;
+  }
+
+  .newsletter-container form{
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 400px) {
