@@ -408,6 +408,11 @@ button {
 
 .specialities-box .h4-1{
   font-size: 16px;
+  margin: 0;
+}
+
+.specialities-box .h4-2{
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
@@ -512,7 +517,6 @@ button {
   }
 
   .specialities-container-bottom {
-    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
