@@ -14,6 +14,7 @@ button {
   cursor: pointer;
 }
 
+/* Header sectiom */
 .header {
   width: 100%;
   max-width: 100%;
@@ -196,6 +197,8 @@ button {
   display: block;
 }
 
+/* Activity section */
+
 .activity {
   width: 100%;
   max-width: 100%;
@@ -268,6 +271,7 @@ button {
   margin: 10px 0;
 }
 
+/* Content section */
 .content {
   width: 100%;
   max-width: 100%;
@@ -312,6 +316,7 @@ button {
   height: 6px;
 }
 
+/* Specialities section */
 .specialities {
   width: 100%;
   max-width: 100%;
@@ -415,6 +420,107 @@ button {
   margin: 0;
 }
 
+/* Pricing section */
+.pricing {
+  width: 100%;
+  max-width: 100%;
+  padding: 150px 5%;
+}
+
+.pricing-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.pricing-container-top {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.pricing-container-bottom {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.pricing-box{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  gap: 10px;
+  padding: 50px;
+}
+
+.pricing-box h2{
+  margin-bottom: 6px;
+}
+
+
+.pricing-box .pricing-image{
+  max-width: 100%;
+  height: auto;
+  width: 40%;
+
+}
+
+
+.p-3{
+  font-weight: 600;
+  color: #737373;
+}
+
+.pricing-price{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.h1-3{
+  margin-bottom: 0px;
+  color: #23A6F0;
+}
+
+.h6-1{
+  margin-top: 0px;
+  font-size: 10px;
+  color: #8EC2F2;
+}
+
+.pricing-btn{
+  padding: 15px 20px;
+  color:white;
+  font-weight: bold;
+  background-color: #23A6F0;
+  border:none;
+  border-radius: 5px;
+}
+
+.pricing-details{
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 15px;
+  font-size: 13px;
+}
+
+.pricing-details-1{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
 @media (max-width: 1200px) {
   .navbar {
     padding: 15px 3%;
@@ -437,6 +543,10 @@ button {
   }
 
   .specialities{
+    padding: 60px 3%;
+  }
+
+  .pricing{
     padding: 60px 3%;
   }
 
@@ -525,8 +635,34 @@ button {
   }
 
   .specialities-box{
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 50px;
+    max-width: 50%;
+  }
+
+  .pricing-container{
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .pricing-container-top{
+    text-align: center;
+  }
+
+  .pricing-container-bottom{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-box{
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  .pricing-image{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
 
@@ -603,6 +739,18 @@ button {
     align-items: center;
     padding: 5px;
   }
+
+  .specialities-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+
 }
 
 @media (max-width: 400px) {
@@ -620,6 +768,11 @@ button {
 
   .navlinkA li a {
     font-size: 14px;
+  }
+
+  .pricing-box{
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 
