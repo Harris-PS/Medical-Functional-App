@@ -1032,6 +1032,10 @@ button {
   .footer-container{
     padding: 20px 5%;
   }
+
+  .footer-top{
+    padding: 20px 5%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1065,6 +1069,7 @@ button {
     min-width: 100%;
     max-width: 100%;
   }
+
 
   .footer-box{
     min-width: 100%;
