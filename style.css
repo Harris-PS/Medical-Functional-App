@@ -721,7 +721,7 @@ button {
   }
   
   .header-container {
-    padding: 50px 3%;
+    padding: 60px 3%;
   }
 
   .h1-1 {
@@ -769,7 +769,6 @@ button {
   .nav-left {
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
   }
 
@@ -907,11 +906,9 @@ button {
 
   .footer-container{
     display: flex;
-    flex:1;
   }
 
   .footer-top{
-    flex: 1;
     gap: 20px;
     justify-content: left;
     align-items: left;
