@@ -520,6 +520,7 @@ button {
   gap: 12px;
 }
 
+/* Reviews section */
 .reviews{
   width: 100%;
   max-width: 100%;
@@ -589,6 +590,7 @@ button {
   margin: 0;
 }
 
+/* Newsletter section */
 .newsletter{
   width: 100%;
   max-width: 100%;
@@ -640,8 +642,81 @@ button {
   color: white;
   border: none;
   font-size: 16px;
+}
+
+.footer{
+  width: 100%;
+  max-width: 100%;
+  padding: 150px 5%;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.footer-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+
+
+.footer-box a{
+  text-decoration: none;
+  color: #737373;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-left{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p{
+  color: #737373;
+  font-weight: 600;
+  font-size: 15px;
 
 }
+
+
 
 @media (max-width: 1200px) {
   .navbar {
@@ -679,6 +754,11 @@ button {
   .newsletter{
     padding: 60px 3%;
   }
+
+  .footer{
+    padding: 60px 3%;
+  }
+
 
 }
 
@@ -788,8 +868,8 @@ button {
   }
 
   .pricing-box{
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 70%;
+    max-width: 70%;
   }
 
   .pricing-image{
@@ -826,6 +906,18 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .footer-container{
+    display: flex;
+    flex:1;
+  }
+
+  .footer-top{
+    flex: 1;
+    gap: 20px;
+    justify-content: left;
+    align-items: left;
   }
 
 }
@@ -906,8 +998,8 @@ button {
   }
 
   .specialities-box{
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   .pricing-box{
@@ -931,6 +1023,10 @@ button {
   .newsletter-container form{
     flex-direction: column;
     gap: 20px;
+  }
+
+  .newsletter-input{
+    border-right: 1px solid #d6d6d6;
   }
 }
 
@@ -962,6 +1058,11 @@ button {
   }
 
   .review-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-box{
     min-width: 100%;
     max-width: 100%;
   }
