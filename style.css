@@ -1028,6 +1028,10 @@ button {
   .newsletter-input{
     border-right: 1px solid #d6d6d6;
   }
+
+  .footer-container{
+    padding: 20px 5%;
+  }
 }
 
 @media (max-width: 400px) {
