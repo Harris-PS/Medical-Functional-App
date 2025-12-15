@@ -793,17 +793,9 @@ button {
     max-width: 400px;
   }
 
-  .p-1 br {
-    display: none;
-  }
-
   .activity-container-top {
     text-align: center;
     align-items: center;
-  }
-
-  .p-2 br {
-    display: none;
   }
 
   .activity-container-bottom {
